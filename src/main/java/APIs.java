@@ -31,7 +31,7 @@ public class APIs {
             userService.addUser(user);
             
             JsonParser parser = new JsonParser();
-            JsonObject aws = parser.parse(new FileReader("src/main/java/neverEatAlone/secrets.txt")).getAsJsonObject();
+            JsonObject aws = parser.parse(new FileReader("src/main/java/secrets.txt")).getAsJsonObject();
             String userName = aws.get("aws_userName").getAsString();
             String password = aws.get("aws_password").getAsString();
             
@@ -78,7 +78,7 @@ public class APIs {
             String restYelpId = interested.get("restYelpId").getAsString();
 
             
-            JsonObject aws = parser.parse(new FileReader("src/main/java/neverEatAlone/secrets.txt")).getAsJsonObject();
+            JsonObject aws = parser.parse(new FileReader("src/main/java/secrets.txt")).getAsJsonObject();
             String userName = aws.get("aws_userName").getAsString();
             String password = aws.get("aws_password").getAsString();
             
@@ -120,7 +120,7 @@ public class APIs {
             JsonParser parser = new JsonParser();
 
             
-            JsonObject aws = parser.parse(new FileReader("src/main/java/neverEatAlone/secrets.txt")).getAsJsonObject();
+            JsonObject aws = parser.parse(new FileReader("src/main/java/secrets.txt")).getAsJsonObject();
             String userName = aws.get("aws_userName").getAsString();
             String password = aws.get("aws_password").getAsString();
             
@@ -178,7 +178,7 @@ public class APIs {
            JsonParser parser = new JsonParser();
 
                
-           JsonObject aws = parser.parse(new FileReader("src/main/java/neverEatAlone/secrets.txt")).getAsJsonObject();
+           JsonObject aws = parser.parse(new FileReader("src/main/java/secrets.txt")).getAsJsonObject();
            String userName = aws.get("aws_userName").getAsString();
            String password = aws.get("aws_password").getAsString();
            
